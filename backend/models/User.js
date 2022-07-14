@@ -17,6 +17,9 @@ const UserSchema = new Schema({
     date:{
         type: Date,
         default: Date.now
+    },
+    age:{
+        type: Number,
     }
   });
   const User = mongoose.model('user', UserSchema);//registers our schema with mongoose. Mongoose models allow us to access data from MongoDB in an object-oriented fashion
